@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c92332">
+  <meta name="description" content="NAPO AI — Espace de gestion des agents IA de NAPO GROUP">
+  <title>NAPO AI — NAPO GROUP</title>
+  <style>
+:root{--red:#c92332;--red-dark:#a91b28;--ink:#20212a;--muted:#737583;--line:#e8e8ed;--bg:#f7f7f9;--white:#fff;--soft:#fff0f1;--shadow:0 12px 32px rgba(29,24,35,.06);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-width:320px}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1180px)/2));gap:16px}.brand{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-size:23px;font-weight:900}.brand strong,.brand small{display:block}.brand strong{font-size:17px;letter-spacing:.04em}.brand small{font-size:9px;letter-spacing:.11em;color:var(--muted);margin-top:3px}.top-actions{display:flex;align-items:center;gap:9px}.local-badge{font-size:12px;color:#4d7157;background:#eff8f0;border-radius:30px;padding:8px 11px;white-space:nowrap}.local-badge i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#38a45b;margin-right:5px}.btn{border:1px solid transparent;border-radius:9px;padding:10px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:.15s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--red);color:white}.btn-primary:hover{background:var(--red-dark)}.btn-light{background:#fff;border-color:var(--line);color:var(--ink)}.shell{max-width:1180px;margin:auto;padding:28px 24px 20px}.hero{background:linear-gradient(120deg,#fff 0%,#fff 58%,#fff0f1 100%);border:1px solid #f0dfe1;border-radius:20px;min-height:250px;padding:35px 40px;display:flex;justify-content:space-between;align-items:center;overflow:hidden;position:relative}.eyebrow{font-size:10px;letter-spacing:.16em;font-weight:800;color:var(--red);margin:0 0 9px}.hero h1{font-size:clamp(30px,4vw,48px);line-height:1.07;letter-spacing:-.045em;margin:0}.hero h1 span{color:var(--red)}.hero-copy{max-width:550px;color:var(--muted);line-height:1.65;font-size:14px;margin:16px 0 0}.hero-orb{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#f66c77,#c92332 52%,#86121e 100%);display:grid;place-items:center;box-shadow:0 20px 45px #c9233238;flex-shrink:0;margin-right:35px}.orb-inner{width:122px;height:122px;border:1px solid #ffffff9c;border-radius:50%;display:grid;place-items:center;color:white;font-size:66px;font-weight:900;position:relative}.orb-inner span{position:absolute;right:-10px;bottom:8px;font-size:17px;background:#fff;color:var(--red);border-radius:8px;padding:4px 7px;letter-spacing:.04em}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.stat-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px 19px}.stat-label,.stat-note{display:block;color:var(--muted);font-size:12px}.stat-card strong{display:block;font-size:28px;letter-spacing:-.04em;margin:8px 0 3px}.stat-note{font-size:11px}.notice{display:flex;align-items:flex-start;gap:11px;border:1px solid #f1d5d8;background:#fff8f8;padding:13px 16px;border-radius:12px;color:#5f3438;font-size:12px;line-height:1.55}.notice p{margin:0}.notice-icon{font-size:18px;color:var(--red)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:34px 0 17px}.section-head h2{font-size:25px;letter-spacing:-.035em;margin:0}.filters{display:flex;gap:8px}.filters input,.filters select{min-width:175px}.agent-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.agent-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;display:flex;flex-direction:column;min-height:190px;transition:.15s}.agent-card:hover{border-color:#e9a5ab;box-shadow:var(--shadow);transform:translateY(-2px)}.agent-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.agent-icon{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:23px}.agent-dept{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--red);background:#fff3f4;border-radius:20px;padding:6px 8px}.agent-card h3{font-size:15px;margin:13px 0 7px}.agent-card p{font-size:12px;line-height:1.55;color:var(--muted);margin:0 0 16px;flex:1}.card-actions{display:flex;gap:8px}.card-actions button{flex:1}.btn-small{padding:8px 10px;font-size:12px}.task-head{margin-top:42px}.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;margin-bottom:17px;box-shadow:var(--shadow)}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.panel-head h3{margin:0;font-size:17px}.icon-btn{border:1px solid var(--line);background:#fff;border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:14px}form label,.detail-block label{display:block;font-size:12px;font-weight:700;margin:14px 0 7px}input,select,textarea{width:100%;font:inherit;font-size:13px;color:var(--ink);background:#fff;border:1px solid #dedee5;border-radius:8px;padding:11px 12px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #c9233214}textarea{resize:vertical;line-height:1.5}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:19px}.tasks-list{display:grid;gap:10px}.task-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px 18px}.task-title-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.task-title-line h3{font-size:14px;margin:0}.task-meta{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}.task-brief{font-size:12px;color:#555763;line-height:1.5;margin:9px 0 0;white-space:pre-wrap}.task-controls{display:flex;gap:7px;align-items:center}.task-controls select{width:auto;min-width:120px;padding:8px;font-size:11px}.status{font-size:10px;font-weight:800;padding:5px 8px;border-radius:30px;background:#f1f1f4;color:#60616b}.status[data-status="Terminée"]{background:#eaf7ed;color:#27743b}.status[data-status="En cours"]{background:#eaf1ff;color:#345db0}.status[data-status="À valider"]{background:#fff2dc;color:#93601b}.priority{font-size:10px;font-weight:800}.priority[data-priority="Urgente"]{color:#c92332}.priority[data-priority="Haute"]{color:#a96a12}.empty{border:1px dashed #d8d8e0;background:#fff;border-radius:14px;text-align:center;padding:30px;color:var(--muted);font-size:13px}.empty strong{display:block;color:var(--ink);font-size:15px;margin-bottom:6px}footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:22px 0 5px;margin-top:35px;gap:15px}footer p,.muted{font-size:11px;color:var(--muted)}.footer-brand .brand-mark{width:33px;height:33px;font-size:18px}.footer-brand strong{font-size:13px}.footer-brand small{font-size:9px}.agent-dialog{width:min(640px,calc(100% - 24px));max-height:90vh;overflow:auto;border:0;border-radius:17px;padding:24px;box-shadow:0 20px 70px #17151d40}.agent-dialog::backdrop{background:#18151dcc;backdrop-filter:blur(3px)}.dialog-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}.dialog-head>div{display:flex;align-items:center;gap:12px}.dialog-head h2{font-size:22px;margin:0}.dialog-icon{width:50px;height:50px;display:grid;place-items:center;background:var(--soft);border-radius:13px;font-size:26px}.dialog-desc{font-size:13px;color:var(--muted);line-height:1.6}.detail-block{border-top:1px solid var(--line);padding-top:14px;margin-top:15px}.detail-block h3{font-size:13px;margin:0 0 7px}.detail-block p{font-size:12px;line-height:1.6;margin:0;color:#5f606b}.full{width:100%;margin-top:12px}.prompt-output{white-space:pre-wrap;overflow-wrap:anywhere;background:#f7f7f9;border:1px solid var(--line);border-radius:10px;padding:14px;font:12px/1.6 ui-monospace,SFMono-Regular,monospace;max-height:280px;overflow:auto}.dialog-actions{display:flex;justify-content:flex-end;margin-top:17px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#24232b;color:white;padding:12px 17px;border-radius:10px;font-size:12px;opacity:0;pointer-events:none;transition:.2s;z-index:10;max-width:90vw}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}@media(max-width:850px){.hero{padding:28px}.hero-orb{width:140px;height:140px;margin-right:0}.orb-inner{width:95px;height:95px;font-size:50px}.agent-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,1fr)}.topbar{padding:0 18px}.local-badge{display:none}}@media(max-width:580px){.topbar{height:auto;min-height:68px;padding:12px 14px;flex-wrap:wrap}.top-actions{gap:6px}.top-actions .btn{padding:8px;font-size:11px}.brand small{font-size:8px}.shell{padding:16px 13px}.hero{padding:24px 21px;min-height:unset}.hero-orb{display:none}.hero h1{font-size:34px}.hero-copy{font-size:13px}.stats{gap:8px}.stat-card{padding:13px}.stat-card strong{font-size:24px}.section-head{align-items:flex-start;flex-direction:column}.section-head h2{font-size:23px}.filters{width:100%;flex-direction:column}.filters input,.filters select{min-width:0}.agent-grid{grid-template-columns:1fr}.agent-card{min-height:0}.task-head{flex-direction:row;align-items:center}.task-head .btn{white-space:nowrap}.task-card{grid-template-columns:1fr}.task-controls{flex-wrap:wrap}.task-controls select{flex:1}footer{align-items:flex-start;flex-direction:column}.form-row{grid-template-columns:1fr;gap:0}.panel{padding:16px}.agent-dialog{padding:18px}.dialog-head h2{font-size:19px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NAPO AI accueil"><span class="brand-mark">N</span><span><strong>NAPO AI</strong><small>NAPO GROUP · CONTROL CENTER</small></span></a>
+    <div class="top-actions"><span class="local-badge"><i></i> Prototype local</span><button id="exportBtn" class="btn btn-light">Exporter</button><button id="importBtn" class="btn btn-light">Importer</button><input id="importFile" type="file" accept="application/json,.json" hidden></div>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <div><p class="eyebrow">ESPACE DE PILOTAGE</p><h1>Votre entreprise.<br><span>Augmentée par l'IA.</span></h1><p class="hero-copy">Organisez les missions, préparez les prompts et pilotez les 15 fonctions IA de NAPO GROUP depuis un seul espace.</p></div>
+      <div class="hero-orb" aria-hidden="true"><div class="orb-inner">N<span>AI</span></div></div>
+    </section>
+    <section class="stats" aria-label="Indicateurs">
+      <article class="stat-card"><span class="stat-label">Agents disponibles</span><strong id="agentCount">15</strong><span class="stat-note">Catalogue de fonctions</span></article>
+      <article class="stat-card"><span class="stat-label">Missions totales</span><strong id="taskCount">0</strong><span class="stat-note">Enregistrées sur cet appareil</span></article>
+      <article class="stat-card"><span class="stat-label">À faire</span><strong id="todoCount">0</strong><span class="stat-note">Missions en attente</span></article>
+      <article class="stat-card"><span class="stat-label">Terminées</span><strong id="doneCount">0</strong><span class="stat-note">Statut déclaré manuellement</span></article>
+    </section>
+    <section class="notice"><span class="notice-icon">ⓘ</span><p><strong>Transparence :</strong> cette version organise les agents et génère des instructions à copier dans un outil IA. Elle n'appelle pas encore de modèle IA et n'exécute aucune action externe.</p></section>
+    <section class="section-head"><div><p class="eyebrow">VOTRE ÉQUIPE NUMÉRIQUE</p><h2>Les agents NAPO</h2></div><div class="filters"><input id="searchInput" type="search" placeholder="Rechercher un agent…" aria-label="Rechercher un agent"><select id="departmentFilter" aria-label="Filtrer par service"><option value="">Tous les services</option></select></div></section>
+    <section id="agentGrid" class="agent-grid"></section>
+    <section class="section-head task-head"><div><p class="eyebrow">EXÉCUTION</p><h2>Gestion des missions</h2></div><button id="newTaskBtn" class="btn btn-primary">+ Nouvelle mission</button></section>
+    <section id="taskComposer" class="panel hidden">
+      <div class="panel-head"><h3 id="formTitle">Créer une mission</h3><button id="closeFormBtn" class="icon-btn" aria-label="Fermer">✕</button></div>
+      <form id="taskForm">
+        <input id="taskId" type="hidden">
+        <label for="taskTitle">Titre de la mission</label><input id="taskTitle" required maxlength="120" placeholder="Ex. Préparer la campagne de lancement">
+        <div class="form-row"><div><label for="taskAgent">Agent responsable</label><select id="taskAgent" required></select></div><div><label for="taskPriority">Priorité</label><select id="taskPriority"><option value="Normale">Normale</option><option value="Haute">Haute</option><option value="Urgente">Urgente</option><option value="Basse">Basse</option></select></div></div>
+        <label for="taskBrief">Contexte et résultat attendu</label><textarea id="taskBrief" rows="4" maxlength="5000" placeholder="Décrivez le contexte, les contraintes et le livrable attendu…"></textarea>
+        <div class="form-row"><div><label for="taskDue">Échéance (facultative)</label><input id="taskDue" type="date"></div><div><label for="taskStatus">Statut</label><select id="taskStatus"><option value="À faire">À faire</option><option value="En cours">En cours</option><option value="À valider">À valider</option><option value="Terminée">Terminée</option></select></div></div>
+        <div class="form-actions"><button type="button" id="cancelFormBtn" class="btn btn-light">Annuler</button><button type="submit" class="btn btn-primary">Enregistrer la mission</button></div>
+      </form>
+    </section>
+    <section id="tasksList" class="tasks-list"></section>
+    <footer><div class="brand footer-brand"><span class="brand-mark">N</span><span><strong>NAPO AI</strong><small>Ensemble pour toujours et toujours plus haut.</small></span></div><p>Prototype MVP · Stockage local · NAPO GROUP</p></footer>
+  </main>
+  <dialog id="agentDialog" class="agent-dialog"><div class="dialog-head"><div><span id="dialogIcon" class="dialog-icon">🧠</span><div><p id="dialogDept" class="eyebrow"></p><h2 id="dialogName"></h2></div></div><button id="dialogClose" class="icon-btn" aria-label="Fermer">✕</button></div><p id="dialogDesc" class="dialog-desc"></p><div class="detail-block"><h3>Mission</h3><p id="dialogMission"></p></div><div class="detail-block"><h3>Règles de sécurité</h3><p id="dialogGuardrails"></p></div><div class="detail-block"><h3>Préparer une demande</h3><label for="agentPromptTask">Mission à confier</label><textarea id="agentPromptTask" rows="4" placeholder="Expliquez ce que l'agent doit préparer…"></textarea><button id="generatePromptBtn" class="btn btn-primary full">Générer le prompt</button></div><div id="promptOutputWrap" class="detail-block hidden"><div class="panel-head"><h3>Prompt prêt à copier</h3><button id="copyPromptBtn" class="btn btn-light">Copier</button></div><pre id="promptOutput" class="prompt-output"></pre><p class="muted">Copiez ce prompt dans votre outil IA. La réponse devra être vérifiée avant toute action.</p></div><div class="dialog-actions"><button id="createTaskFromAgent" class="btn btn-light">Créer une mission pour cet agent</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+const AGENTS_DATA = [{"id":"manager","name":"NAPO AI Manager","department":"Direction","icon":"🧠","description":"Coordonne les priorités, tâches, échéances et rapports de direction.","mission":"Transformer les objectifs de la direction en plans d'action vérifiables et coordonner les agents.","guardrails":"Ne prétends jamais qu'une tâche a été exécutée sans preuve. Demande validation pour les décisions sensibles."},{"id":"sales","name":"NAPO Sales","department":"Commercial","icon":"🤝","description":"Prépare la prospection, les offres, les relances et le suivi du pipeline.","mission":"Aider à qualifier les prospects, rédiger des messages personnalisés et structurer les opportunités.","guardrails":"Respecte les règles de prospection et de confidentialité. Ne contacte personne sans autorisation."},{"id":"marketing","name":"NAPO Marketing","department":"Marketing","icon":"📣","description":"Produit les contenus et campagnes de communication NAPO GROUP.","mission":"Préparer des publications, scripts, calendriers éditoriaux et briefs de campagnes cohérents avec la marque.","guardrails":"Ne publie pas et ne dépense pas de budget publicitaire sans approbation."},{"id":"academy","name":"NAPO Academy","department":"Formation","icon":"🎓","description":"Conçoit cours, exercices, évaluations et supports pédagogiques.","mission":"Créer des formations pratiques, progressives et évaluables en IA et technologies numériques.","guardrails":"Signale les sources et incertitudes; ne fabrique pas de certificats ni de résultats."},{"id":"tech","name":"NAPO Tech","department":"Technologie","icon":"💻","description":"Aide à concevoir sites, applications, API, tests et documentation.","mission":"Proposer du code maintenable, des tests et une documentation exploitable.","guardrails":"Ne déploie pas en production et ne modifie pas des données réelles sans approbation."},{"id":"finance","name":"NAPO Finance","department":"Finance","icon":"📊","description":"Organise budgets, dépenses, recettes, factures et indicateurs.","mission":"Analyser les données financières fournies et préparer des tableaux de bord.","guardrails":"Distingue estimations et données réelles; aucune transaction ou déclaration sans validation humaine."},{"id":"support","name":"NAPO Support","department":"Service client","icon":"🎧","description":"Prépare les réponses clients et classe les demandes.","mission":"Répondre clairement aux questions fréquentes et orienter les demandes complexes.","guardrails":"N'expose pas les données d'un client à un autre; escalade les plaintes sensibles."},{"id":"operations","name":"NAPO Operations","department":"Opérations","icon":"🗂️","description":"Suit les projets, tâches, dépendances et comptes rendus.","mission":"Structurer l'exécution, repérer les blocages et proposer des actions de suivi.","guardrails":"N'invente pas les statuts, dates, responsables ou résultats."},{"id":"hr","name":"NAPO HR","department":"Ressources humaines","icon":"👥","description":"Prépare fiches de poste, annonces et parcours d'intégration.","mission":"Structurer les documents RH et les processus de recrutement et d'intégration.","guardrails":"Les décisions d'embauche, de rémunération ou disciplinaires restent humaines."},{"id":"legal","name":"NAPO Legal","department":"Juridique","icon":"⚖️","description":"Prépare des projets de documents et relève les clauses à vérifier.","mission":"Aider à organiser les contrats et les questions juridiques à soumettre à un professionnel.","guardrails":"Ne présente pas une réponse comme un avis juridique définitif; recommande une revue qualifiée."},{"id":"research","name":"NAPO Research","department":"Recherche","icon":"🔬","description":"Analyse les tendances IA, blockchain et technologies émergentes.","mission":"Comparer des solutions et rédiger des notes avec faits, sources, hypothèses et limites.","guardrails":"N'invente pas de sources ni de résultats; date les informations susceptibles d'évoluer."},{"id":"commerce","name":"NAPO Commerce","department":"E-commerce","icon":"🛒","description":"Prépare catalogues, fiches produits, offres et analyses de commandes.","mission":"Améliorer la qualité des fiches, le suivi des commandes et l'analyse commerciale.","guardrails":"Ne change pas de prix, ne passe pas commande et n'encaisse pas sans autorisation."},{"id":"coworking","name":"NAPO Coworking","department":"Coworking","icon":"🏢","description":"Aide à gérer réservations, salles, événements et occupation.","mission":"Organiser les réservations et préparer des offres d'espaces professionnels.","guardrails":"Ne confirme pas une réservation sans vérifier la disponibilité réelle."},{"id":"data","name":"NAPO Data","department":"Données","icon":"📈","description":"Produit des indicateurs, rapports et contrôles de cohérence.","mission":"Transformer les données fournies en analyses compréhensibles et traçables.","guardrails":"Explique les calculs, la qualité des données et les limites; protège les données personnelles."},{"id":"security","name":"NAPO Security","department":"Sécurité","icon":"🛡️","description":"Aide à examiner les alertes, permissions et risques techniques.","mission":"Préparer des contrôles de sécurité défensifs et des rapports d'incident.","guardrails":"N'effectue pas d'action intrusive ni de modification de sécurité sans autorisation explicite."}];
+/* NAPO AI MVP — prototype local, aucun appel API externe */
+const STORAGE_KEY = "napo-ai.tasks.v1";
+let agents = [];
+let tasks = [];
+let activeAgentId = null;
+let toastTimer;
+
+const $ = (id) => document.getElementById(id);
+const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const today = () => new Date().toISOString().slice(0,10);
+const uid = () => (crypto && crypto.randomUUID) ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+
+function showToast(message) {
+  const toast = $("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+}
+function saveTasks() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks)); }
+  catch (err) { showToast("Stockage indisponible : exportez vos données pour les conserver."); }
+  renderTasks();
+  renderStats();
+}
+function loadTasks() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+    tasks = Array.isArray(parsed) ? parsed : [];
+  } catch { tasks = []; }
+}
+function agentById(id) { return agents.find(a => a.id === id); }
+function renderStats() {
+  $("agentCount").textContent = agents.length;
+  $("taskCount").textContent = tasks.length;
+  $("todoCount").textContent = tasks.filter(t => t.status === "À faire").length;
+  $("doneCount").textContent = tasks.filter(t => t.status === "Terminée").length;
+}
+function populateFilters() {
+  const departments = [...new Set(agents.map(a => a.department))].sort((a,b) => a.localeCompare(b, "fr"));
+  $("departmentFilter").innerHTML = '<option value="">Tous les services</option>' + departments.map(d => `<option value="${escapeHtml(d)}">${escapeHtml(d)}</option>`).join("");
+  $("taskAgent").innerHTML = agents.map(a => `<option value="${a.id}">${escapeHtml(a.name)}</option>`).join("");
+}
+function renderAgents() {
+  const query = $("searchInput").value.trim().toLocaleLowerCase("fr");
+  const dept = $("departmentFilter").value;
+  const shown = agents.filter(a => (!dept || a.department === dept) && (!query || `${a.name} ${a.department} ${a.description}`.toLocaleLowerCase("fr").includes(query)));
+  $("agentGrid").innerHTML = shown.length ? shown.map(a => `
+    <article class="agent-card">
+      <div class="agent-card-top"><span class="agent-icon">${a.icon}</span><span class="agent-dept">${escapeHtml(a.department)}</span></div>
+      <h3>${escapeHtml(a.name)}</h3><p>${escapeHtml(a.description)}</p>
+      <div class="card-actions"><button class="btn btn-light btn-small" data-action="details" data-agent="${a.id}">Voir l'agent</button><button class="btn btn-primary btn-small" data-action="assign" data-agent="${a.id}">Nouvelle mission</button></div>
+    </article>`).join("") : '<div class="empty"><strong>Aucun agent trouvé</strong>Modifiez votre recherche ou le filtre.</div>';
+}
+function renderTasks() {
+  const list = $("tasksList");
+  if (!tasks.length) {
+    list.innerHTML = '<div class="empty"><strong>Aucune mission pour le moment</strong>Créez une mission pour organiser le travail d’un agent.</div>';
+    return;
+  }
+  const sorted = [...tasks].sort((a,b) => {
+    const order = {"Urgente":0,"Haute":1,"Normale":2,"Basse":3};
+    return (order[a.priority] ?? 2) - (order[b.priority] ?? 2) || String(b.createdAt).localeCompare(String(a.createdAt));
+  });
+  list.innerHTML = sorted.map(t => {
+    const agent = agentById(t.agentId);
+    return `<article class="task-card">
+      <div><div class="task-title-line"><h3>${escapeHtml(t.title)}</h3><span class="status" data-status="${escapeHtml(t.status)}">${escapeHtml(t.status)}</span><span class="priority" data-priority="${escapeHtml(t.priority)}">${escapeHtml(t.priority)}</span></div>
+      <div class="task-meta"><span>${escapeHtml(agent ? agent.name : "Agent inconnu")}</span><span>Créée le ${escapeHtml(t.createdAt || "—")}</span>${t.due ? `<span>Échéance : ${escapeHtml(t.due)}</span>` : ""}</div>
+      ${t.brief ? `<p class="task-brief">${escapeHtml(t.brief)}</p>` : ""}</div>
+      <div class="task-controls"><select aria-label="Statut de ${escapeHtml(t.title)}" data-action="status" data-task="${t.id}">${["À faire","En cours","À valider","Terminée"].map(s => `<option ${t.status===s?"selected":""} value="${s}">${s}</option>`).join("")}</select><button class="btn btn-light btn-small" data-action="prompt-task" data-task="${t.id}">Prompt</button><button class="btn btn-light btn-small" data-action="edit-task" data-task="${t.id}">Modifier</button><button class="btn btn-light btn-small" data-action="delete-task" data-task="${t.id}">Supprimer</button></div>
+    </article>`;
+  }).join("");
+}
+function openTaskForm(agentId = "", task = null) {
+  $("taskComposer").classList.remove("hidden");
+  $("formTitle").textContent = task ? "Modifier la mission" : "Créer une mission";
+  $("taskId").value = task?.id || "";
+  $("taskTitle").value = task?.title || "";
+  $("taskAgent").value = task?.agentId || agentId || agents[0]?.id || "";
+  $("taskPriority").value = task?.priority || "Normale";
+  $("taskBrief").value = task?.brief || "";
+  $("taskDue").value = task?.due || "";
+  $("taskStatus").value = task?.status || "À faire";
+  $("taskComposer").scrollIntoView({behavior:"smooth", block:"start"});
+  $("taskTitle").focus({preventScroll:true});
+}
+function closeTaskForm() { $("taskComposer").classList.add("hidden"); $("taskForm").reset(); $("taskId").value = ""; }
+function handleTaskSubmit(event) {
+  event.preventDefault();
+  const id = $("taskId").value;
+  const old = tasks.find(t => t.id === id);
+  const task = {
+    id: id || uid(), title: $("taskTitle").value.trim(), agentId: $("taskAgent").value,
+    priority: $("taskPriority").value, brief: $("taskBrief").value.trim(),
+    due: $("taskDue").value, status: $("taskStatus").value,
+    createdAt: old?.createdAt || today(), updatedAt: today()
+  };
+  if (!task.title) return;
+  if (old) tasks = tasks.map(t => t.id === id ? task : t); else tasks.unshift(task);
+  saveTasks(); closeTaskForm(); showToast(old ? "Mission mise à jour." : "Mission enregistrée.");
+}
+function openAgent(agentId) {
+  const a = agentById(agentId); if (!a) return;
+  activeAgentId = agentId;
+  $("dialogIcon").textContent = a.icon;
+  $("dialogDept").textContent = a.department;
+  $("dialogName").textContent = a.name;
+  $("dialogDesc").textContent = a.description;
+  $("dialogMission").textContent = a.mission;
+  $("dialogGuardrails").textContent = a.guardrails;
+  $("agentPromptTask").value = "";
+  $("promptOutput").textContent = "";
+  $("promptOutputWrap").classList.add("hidden");
+  $("agentDialog").showModal();
+}
+function buildPrompt(agent, taskText) {
+  return `RÔLE : ${agent.name} — NAPO GROUP\nSERVICE : ${agent.department}\n\nMISSION ET RESPONSABILITÉS\n${agent.mission}\n\nRÈGLES DE SÉCURITÉ\n${agent.guardrails}\n\nDEMANDE\n${taskText.trim() || "[Décrire la tâche et le résultat attendu]"}\n\nMÉTHODE DE TRAVAIL\n1. Reformule l'objectif et le livrable attendu.\n2. Liste les informations disponibles et celles qui manquent.\n3. Distingue explicitement les faits, hypothèses et recommandations.\n4. Fournis un résultat structuré, concret et exploitable en français.\n5. N'invente aucun chiffre, source, client, résultat ni action effectuée.\n6. Indique les vérifications nécessaires et les points à faire valider par le responsable humain.\n7. Ne réalise aucune action externe, transaction ou modification irréversible sans autorisation explicite.\n\nCONTEXTE DE MARQUE\nNAPO GROUP : entreprise technologique; identité rouge et blanc; valeurs : innovation, qualité, collaboration. Devise : « Ensemble pour toujours et toujours plus haut ».\n\nFORMAT DE SORTIE\n- Résumé\n- Travail proposé\n- Informations manquantes / hypothèses\n- Étapes suivantes\n- Validations humaines requises`;
+}
+function exportData() {
+  const data = {app:"NAPO AI",version:1,exportedAt:new Date().toISOString(),tasks};
+  const blob = new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a"); a.href=url; a.download=`napo-ai-backup-${today()}.json`; a.click();
+  URL.revokeObjectURL(url); showToast("Export JSON préparé.");
+}
+function importData(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      const incoming = Array.isArray(data) ? data : data.tasks;
+      if (!Array.isArray(incoming)) throw new Error("Format");
+      const valid = incoming.filter(t => t && typeof t.title === "string" && typeof t.agentId === "string").map(t => ({
+        id: String(t.id || uid()), title: String(t.title).slice(0,120), agentId: agentById(t.agentId) ? t.agentId : agents[0].id,
+        priority: ["Basse","Normale","Haute","Urgente"].includes(t.priority) ? t.priority : "Normale",
+        brief: String(t.brief || "").slice(0,5000), due: String(t.due || ""),
+        status: ["À faire","En cours","À valider","Terminée"].includes(t.status) ? t.status : "À faire",
+        createdAt: String(t.createdAt || today()), updatedAt: today()
+      }));
+      if (!confirm(`Importer ${valid.length} mission(s) ? Les missions actuellement présentes seront remplacées.`)) return;
+      tasks = valid; saveTasks(); showToast("Import terminé.");
+    } catch { showToast("Fichier JSON invalide ou incompatible."); }
+    $("importFile").value = "";
+  };
+  reader.readAsText(file);
+}
+async function copyPrompt() {
+  const text = $("promptOutput").textContent;
+  try { await navigator.clipboard.writeText(text); showToast("Prompt copié."); }
+  catch { const area = document.createElement("textarea"); area.value=text; document.body.appendChild(area); area.select(); const ok=document.execCommand("copy"); area.remove(); showToast(ok ? "Prompt copié." : "Copie impossible : sélectionnez le texte manuellement."); }
+}
+async function init() {
+  agents = AGENTS_DATA;
+  loadTasks(); populateFilters(); renderAgents(); renderTasks(); renderStats();
+  $("searchInput").addEventListener("input", renderAgents);
+  $("departmentFilter").addEventListener("change", renderAgents);
+  $("newTaskBtn").addEventListener("click", () => openTaskForm());
+  $("closeFormBtn").addEventListener("click", closeTaskForm);
+  $("cancelFormBtn").addEventListener("click", closeTaskForm);
+  $("taskForm").addEventListener("submit", handleTaskSubmit);
+  $("exportBtn").addEventListener("click", exportData);
+  $("importBtn").addEventListener("click", () => $("importFile").click());
+  $("importFile").addEventListener("change", e => { if (e.target.files[0]) importData(e.target.files[0]); });
+  $("dialogClose").addEventListener("click", () => $("agentDialog").close());
+  $("generatePromptBtn").addEventListener("click", () => {
+    const a = agentById(activeAgentId); if (!a) return;
+    $("promptOutput").textContent = buildPrompt(a, $("agentPromptTask").value);
+    $("promptOutputWrap").classList.remove("hidden");
+  });
+  $("copyPromptBtn").addEventListener("click", copyPrompt);
+  $("createTaskFromAgent").addEventListener("click", () => { const id=activeAgentId; $("agentDialog").close(); openTaskForm(id); });
+  $("agentGrid").addEventListener("click", e => {
+    const btn=e.target.closest("button[data-action]"); if (!btn) return;
+    if (btn.dataset.action==="details") openAgent(btn.dataset.agent);
+    if (btn.dataset.action==="assign") openTaskForm(btn.dataset.agent);
+  });
+  $("tasksList").addEventListener("click", e => {
+    const btn=e.target.closest("button[data-action]"); if (!btn) return;
+    const task=tasks.find(t=>t.id===btn.dataset.task); if (!task) return;
+    if (btn.dataset.action==="delete-task") {
+      if (confirm(`Supprimer la mission « ${task.title} » ?`)) { tasks=tasks.filter(t=>t.id!==task.id); saveTasks(); showToast("Mission supprimée."); }
+    }
+    if (btn.dataset.action==="edit-task") openTaskForm("",task);
+    if (btn.dataset.action==="prompt-task") { openAgent(task.agentId); $("agentPromptTask").value=`Titre : ${task.title}\nContexte : ${task.brief || "À préciser"}\nPriorité : ${task.priority}\nÉchéance : ${task.due || "Non définie"}\nStatut actuel : ${task.status}`; }
+  });
+  $("tasksList").addEventListener("change", e => {
+    const select=e.target.closest('select[data-action="status"]'); if (!select) return;
+    const task=tasks.find(t=>t.id===select.dataset.task); if (!task) return;
+    task.status=select.value; task.updatedAt=today(); saveTasks(); showToast("Statut mis à jour.");
+  });
+}
+document.addEventListener("DOMContentLoaded", init);
+
+  </script>
+</body>
+</html>
